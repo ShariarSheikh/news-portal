@@ -5,6 +5,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     theme: {
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+      },
       screens: {
         sm: "640px",
         // => @media (min-width: 640px) { ... }
@@ -35,6 +38,11 @@ module.exports = {
       scale: ["active", "group-hover"],
       //...
       opacity: ["disabled"],
+      //..................
     },
   },
+  plugins: [
+    // ...
+    require("@tailwindcss/line-clamp"),
+  ],
 };
